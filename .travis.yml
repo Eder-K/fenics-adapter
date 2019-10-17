@@ -29,7 +29,7 @@ matrix:
       - $PY -m pip install --upgrade setuptools
   - os: linux
     name: "Systemtests"
-    if: fork = false AND ( branch = master OR branch = develop)
+    if: fork = false AND ( branch = master OR branch = develop OR branch = system_tests_trials)
     python: "3.6" 
     env: PY=python3
     script:
